@@ -1,21 +1,21 @@
 # 侧边栏菜单
 menu:
-  主页: /
-  归档: /archives
-  分类: /categories
-  标签: /tags
-  旅行: /tags/旅行/
-  摄影: http://shenyu-vip.lofter.com
-  友链: /friends
-  关于我: /2019/about
+  # 主页: /
+  全部文章: /archives
+  文章分类: /categories
+  全部标签: /tags
+  书画影音: /book
+  友情链接: /friends
+  关于本站: /about
+  个人简历: /resume
 
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
 subtitle:
-  enable: true # 是否开启动效
-  text: 面朝大海，春暖花开 # 显示的文字
-  text2: 愿你一生努力，一生被爱 # 滚动播放，如果不需要可以留空
-  text3: 想要的都拥有，得不到的都释怀 # 最多支持三段文字
+  enable: false # 是否开启动效
+  text: 兵無常勢，水無常形 # 显示的文字
+  text2:  # 滚动播放，如果不需要可以留空
+  text3:  # 最多支持三段文字
   startDelay: 0 # 延迟时间
   typeSpeed: 200 # 打字速度
   loop: true # 是否循环
@@ -24,13 +24,13 @@ subtitle:
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
-logo: /images/ayer-side.svg
+logo: /favicon.ico
 
 # 封面配置
 # enable-是否启用封面；path-封面背景图；logo-封面logo
 cover:
   enable: true
-  path: /images/cover1.jpg # /source/images目录下附送多张美图，可更换
+  path: /images/cover4.jpg # /source/images目录下附送多张美图，可更换
   logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条
@@ -38,15 +38,15 @@ progressBar: true
 
 # 告示板模块
 broadcast:
-  enable: true # true开启，false关闭
-  type: 2 # 1：自定义输入，2：一言api(https://hitokoto.cn/)
-  text: 一个安静优雅的hexo主题，快速且响应式。 # type为1时有效
+  enable: false # true开启，false关闭
+  type: 1 # 1：自定义输入，2：一言api(https://hitokoto.cn/)
+  text: tmd是只能显示一行还是怎的 # type为1时有效
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: 阅读更多...
+excerpt_link: 显示更多...
 # 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
-excerpt_all: false
+excerpt_all: true
 
 # 是否开启代码复制按钮
 copy_btn: true
@@ -80,9 +80,9 @@ word_count:
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
-reward_wording: "请我喝杯咖啡吧~"
+reward_wording: "欢迎打赏支持作者"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
 alipay: /images/alipay.jpg
 # 微信二维码图片地址
@@ -90,7 +90,7 @@ weixin: /images/wechat.jpg
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
-copyright_type: 2
+copyright_type: 0
 
 # 是否启用搜索
 # 需要安装hexo-generator-searchdb(https://github.com/theme-next/hexo-generator-searchdb)
@@ -98,7 +98,7 @@ search: true
 
 # RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
 # 不想显示可以直接留空
-rss: /atom.xml
+rss: 
 
 # 是否启用黑夜模式开关
 darkmode: true
@@ -122,7 +122,7 @@ layout:
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github:
   # (关闭请设置为false)
-  enable: true
+  enable: false
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
 # 网易云音乐插件
@@ -164,7 +164,7 @@ mermaid:
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2025
 
 # ICP备案信息尾部显示
 icp:
@@ -180,23 +180,21 @@ gongan:
 
 # 友情链接
 friends_link:
+
+  Hexo官网:
+    url: https://hexo.io
+    img: /images/hexo.png
+
   Ayer主题: #网站名称
     #网站地址
     url: https://github.com/Shen-Yu/hexo-theme-ayer
     #网站图片(可忽略不写)
     img: /images/ayer.png
-  GitHub:
-    url: https://github.com/Shen-Yu
+  
+  GitHub主页:
+    url: https://github.com/KaleidScoper
     img: /images/github.png
-  码云:
-    url: https://gitee.com/shen-yu
-    img: /images/gitee.png
-  Hexo官网:
-    url: https://hexo.io
-    img: /images/hexo.png
-  Hexo图表插件:
-    url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: /images/hexo-tag-chart.png
+
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo;
 
@@ -214,12 +212,12 @@ valine:
 
 # 2、Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
+  enable: true # true
+  clientID: Ov23liCJEFZyi44Lnx0M # GitHub Application Client ID
+  clientSecret: 8cded70703b10f4fa4ed60d72fa7c345014ec7de # Client Secret
+  repo: blog-comments # Repository name
+  owner: KaleidScoper # GitHub ID
+  admin: KaleidScoper # GitHub ID
 
 # 3、Twikoo(https://github.com/imaegoo/twikoo)
 twikoo:
@@ -228,17 +226,13 @@ twikoo:
 
 # 首页广告配置
 # 可以根据需要自行增加ad_3，ad_4...，留空则不显示，建议图片和url不要带ad等关键词，否则可能会被adblock等插件屏蔽
+
 ads:
-  ad_1:
-    title: 云服务器限时秒杀
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
-    url: https://curl.qcloud.com/kvO7hb43
-    width: 300
-  ad_2:
-    title: vultr优惠vps
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
-    url: https://www.vultr.com/?ref=8630075
-    width: 300
+ad_1:
+  title: # 广告标题
+  url: # 广告链接
+  img: # 广告图片地址
+  width: # 广告宽度
 
 # 网站开启加密访问，密码可设置任何字符
 lock:
